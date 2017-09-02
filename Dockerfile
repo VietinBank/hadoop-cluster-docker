@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install -y openssh-server openjdk-8-jdk wget
 RUN wget http://mirrors.viethosting.com/apache/hadoop/common/hadoop-2.8.1/hadoop-2.8.1.tar.gz && \
     tar -xzf hadoop-2.8.1.tar.gz && \
     mv hadoop-2.8.1 /usr/local/hadoop && \
-    rm hadoop-2.8.1.tar.gz
+    rm hadoop-2.8.1.tar.gz && \
+    rm -rf /usr/local/hadoop/share/doc
 
 # set environment variable
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/

@@ -10,19 +10,19 @@
 ##### 1. pull docker image
 
 ```
-docker pull kiwenlau/hadoop:1.0
+docker pull vuquochuy/hadoop
 ```
 
 ##### 2. clone github repository
 
 ```
-git clone https://github.com/kiwenlau/hadoop-cluster-docker
+git clone https://github.com/vuquochuy/hadoop-cluster-docker
 ```
 
 ##### 3. create hadoop network
 
 ```
-docker network create --driver=bridge hadoop
+docker network create hadoop
 ```
 
 ##### 4. start container
